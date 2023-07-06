@@ -29,7 +29,7 @@ a:hover {
 }
 
 h1,
-h2,
+h2, 
 h3,
 h4,
 h5,
@@ -188,7 +188,8 @@ section {
 }
 
 .header .logo img {
-  max-height: 40px;
+  max-height: 120px;
+  max-width: 200px;
   margin-right: 6px;
 }
 
@@ -2326,7 +2327,8 @@ section {
 }
 
 .footer .footer-top .footer-info .logo img {
-  max-height: 40px;
+  max-height: 120px;
+  max-width: 200px;
   margin-right: 6px;
 }
 
