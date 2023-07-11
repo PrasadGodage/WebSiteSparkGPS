@@ -47,7 +47,7 @@
 
   <!-- ======= Header ======= -->
   <!-- ======= Header ======= -->
-  
+
   <header id="header" class="header fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
@@ -71,16 +71,16 @@
 
             </ul>
           </li>
-          
-          <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
+
+        <!--  <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              
+
 
               <li><a href="fuelconsmpn.html">Fuel consumption</a></li>
               <li><a href="wastemng.html">Waste Management Solution</a></li>
-              
+
             </ul>
-          </li>
+          </li>-->  
           <!--<li class="dropdown"><a href="#"><span>Technology</span> <i class="bi bi-chevron-down"></i></a>-->
           <!-- <ul>
               <li><a href="#">IOT Platform</a></li>
@@ -132,7 +132,7 @@
           </li>-->
 
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-         <!-- <li><a class="getstarted scrollto" href="#about">Get Started</a></li>-->
+          <!-- <li><a class="getstarted scrollto" href="#about">Get Started</a></li>-->
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -171,7 +171,7 @@
   <main id="main">
     <!-- ======= About Section ======= -->
     <!-- ======= Counts Section ======= -->
-    <section id="counts" class="counts">
+    <!-- <section id="counts" class="counts">
       <div class="container" data-aos="fade-up">
 
         <div class="row gy-4">
@@ -223,7 +223,7 @@
         </div>
 
       </div>
-    </section><!-- End Counts Section -->
+    </section>--><!-- End Counts Section -->
     <section id="about" class="about" style="margin-top: -20px; background-color: aliceblue;">
 
       <div class="container" data-aos="fade-up">
@@ -468,7 +468,7 @@
 
 
     <!-- ======= Clients Section ======= -->
-    <section id="clients" class="clients">
+    <!--<section id="clients" class="clients">
 
       <div class="container" data-aos="fade-up">
 
@@ -492,7 +492,7 @@
         </div>
       </div>
 
-    </section><!-- End Clients Section -->
+    </section>--><!-- End Clients Section -->
 
 
     <!-- End Recent Blog Posts Section -->
@@ -526,48 +526,48 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-app zoom">
             <div>
 
-              <img src="assets/img/portfolio/image2.jpg" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/GPS 1.jpg" class="img-fluid" alt="">
 
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app zoom">
             <div>
-              <img src="assets/img/portfolio/gallary2.png" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/GPS 3.jpg" class="img-fluid" alt="">
 
             </div>
           </div>
           <div class="col-lg-4 col-md-6 portfolio-item filter-app zoom">
             <div>
-              <img src="assets/img/portfolio/image3.jpg" class="img-fluid" alt="">
-
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app zoom">
-            <div>
-              <img src="assets/img/portfolio/image5.jpg" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/GPS 2.jpg" class="img-fluid" alt="">
 
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app zoom">
             <div>
-              <img src="assets/img/portfolio/image7.jpg" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/GPS 4.jpg" class="img-fluid" alt="">
 
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app zoom">
             <div>
-              <img src="assets/img/portfolio/image6.jpg" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/GPS 8.jpg" class="img-fluid" alt="">
 
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app zoom">
             <div>
-              <img src="assets/img/portfolio/image12.jpg" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/GPS 5.jpg" class="img-fluid" alt="">
+
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app zoom">
+            <div>
+              <img src="assets/img/portfolio/GPS 10.jpg" class="img-fluid" alt="">
 
             </div>
           </div>
@@ -646,40 +646,52 @@
 
           <div class="col-lg-6">
 
-            <form action="forms/contact.php" method="post" class="php-email-form">
+            <form action="contactform.php" method="post" class="php-email-form">
               <h3 style="color:#012970; text-align: center;"><strong>Contact Us</strong></h3>
+              <hr>
+              <!--<?php
+                   $msg="";
+
+                   is(isset($_GET['success']))
+            {
+              $msg="Your message has been send";
+              echo ""$msg;
+            }
+              ?>-->
               <div class="row gy-4">
 
                 <div class="col-md-6">
                   <input type="text" name="name" class="form-control" placeholder="Your Name" required>
                 </div>
 
-                <div class="col-md-6 ">
+                <div class="col-md-6">
+                  <input type="number" class="form-control" name="contact" placeholder="Contact" required>
+                </div>
+
+                <div class="col-md-12 ">
                   <input type="email" class="form-control" name="email" placeholder="Your Email" required>
                 </div>
 
-                <div class="col-md-12">
-                  <input type="number" class="form-control" name="contact" placeholder="Contact" required>
-                </div>
+
 
                 <div class="col-md-12">
                   <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
                 </div>
 
-                <div class="col-md-12 text-center">
+                <!-- <div class="col-md-12 text-center">
                   <div class="loading">Loading</div>
                   <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>-->
 
-                  <button type="submit">Send Message</button>
-                </div>
-
+                <button type="submit" name="submit">Send Message</button>
               </div>
-            </form>
 
           </div>
+          </form>
 
         </div>
+
+      </div>
 
       </div>
 
@@ -690,7 +702,7 @@
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
 
-    
+
 
     <div class="footer-top">
       <div class="container">
@@ -705,12 +717,12 @@
               more than 8 Years in Gps Devices and IOT Product, Software solutions.
 
             </p>
-            <div class="social-links mt-3">
+            <!--<div class="social-links mt-3">
               <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
               <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
               <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
               <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-            </div>
+            </div>-->
           </div>
 
           <div class="col-lg-2 col-6 footer-links">
@@ -718,9 +730,9 @@
             <ul>
               <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="#about">About us</a></li>
-             
+
               <li><i class="bi bi-chevron-right"></i> <a href="#contact">Contact Us</a></li>
-              
+
             </ul>
           </div>
 
@@ -729,7 +741,7 @@
             <ul>
               <li><i class="bi bi-chevron-right"></i> <a href="Termsofuse.html">Terms of service</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="PriivacyPolicy.html">Privacy policy</a></li>
-             
+
 
             </ul>
           </div>
