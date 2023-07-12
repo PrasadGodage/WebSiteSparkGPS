@@ -1,5 +1,5 @@
 <?php
- echo "Test";
+ 
   if(isset($_POST['submit'])){
     
 
