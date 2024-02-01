@@ -122,74 +122,17 @@
   </section><!-- End Hero -->
 
   <main id="main">
-
-    <!-- ======= Counts Section ======= -->
-    <!-- <section id="counts" class="counts">
-      <div class="container" data-aos="fade-up">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="count-box">
-              <i class="bi bi-emoji-smile"></i>
-              <div>
-                <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1"
-                  class="purecounter"></span>
-                <p>Happy Customers</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="count-box">
-              <i class="bi bi-journal-richtext" style="color: #ee6c20;"></i>
-              <div>
-                <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1"
-                  class="purecounter"></span>
-                <p>Projects</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="count-box">
-              <i class="bi bi-headset" style="color: #15be56;"></i>
-              <div>
-                <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1"
-                  class="purecounter"></span>
-                <p>Hours Of Support</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="count-box">
-              <i class="bi bi-people" style="color: #bb0852;"></i>
-              <div>
-                <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1"
-                  class="purecounter"></span>
-                <p>Hard Workers</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>--><!-- End Counts Section -->
-    <!--<div class="icons">
-              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-    </div>-->
-
-    <div class="sticky-container">
+       <div class="sticky-container">
       <ul class="sticky">
           <li>
             <a href="https://www.facebook.com/codexworld" target="_blank">
             <img src="assets/img/testimonials/facebook.png" width="32" height="32"></a>
            
+          </li>
+          <li>
+            <a href="https://www.youtube.com/@sparkgpssystem981" target="_blank">
+              <img src="assets/img/testimonials/youtube.png" width="32" height="32">
+          </a>
           </li>
           <li>
             <a href="https://twitter.com/codexworldblog" target="_blank">
@@ -553,7 +496,7 @@
 
           <div class="col-lg-6">
 
-            <form action="contact.php" method="post" class="php-email-form">
+            <form action="forms/contact.php" method="post" class="php-email-form">
               <h3 style="color:#012970; text-align: center;"><strong>Contact Us</strong></h3>
               <hr>
 
@@ -713,10 +656,48 @@
     });
   </script>
 
+<script>
+  var url = 'https://wati-integration-prod-service.clare.ai/v2/watiWidget.js?54145';
+  var s = document.createElement('script');
+  s.type = 'text/javascript';
+  s.async = true;
+  s.src = url;
+  var options = {
+  "enabled":true,
+  "chatButtonSetting":{
+      "backgroundColor":"#25D366",
+      "ctaText":"Chat with us",
+      "borderRadius":"25",
+      "marginLeft": "0",
+      "marginRight": "20",
+      "marginBottom": "20",
+      "ctaIconWATI":false,
+      "position":"right"
+  },
+  "brandSetting":{
+      "brandName":"Wati",
+      "brandSubTitle":"Spark GPS",
+      "brandImg":"https://www.wati.io/wp-content/uploads/2023/04/Wati-logo.svg",
+      "welcomeText":"Hi there!\nHow can I help you?",
+      "messageText":"Hello, %0A I have a question about",
+      "backgroundColor":"#25D366",
+      "ctaText":"Chat with us",
+      "borderRadius":"25",
+      "autoShow":false,
+      "phoneNumber":"919604468817"
+  }
+  };
+  s.onload = function() {
+      CreateWhatsappChatWidget(options);
+  };
+  var x = document.getElementsByTagName('script')[0];
+  x.parentNode.insertBefore(s, x);
+</script>
+
 
    <!-- Whats App Chat Boat Code  -->
-   <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-   <div class="elfsight-app-c605da1a-6cac-45da-9eba-8f92b4303faf"></div>
+   <!-- <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+   <div class="elfsight-app-c605da1a-6cac-45da-9eba-8f92b4303faf"></div> -->
 <!-- End Whats App Chat Boat Code  -->
 </body>
 
